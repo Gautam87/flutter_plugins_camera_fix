@@ -52,10 +52,10 @@ public class CameraFeatureFactoryImpl implements CameraFeatureFactory {
 
   @Override
   public ResolutionFeature createResolutionFeature(
-      @NonNull CameraProperties cameraProperties,
-      ResolutionPreset initialSetting,
-      String cameraName) {
-    return new ResolutionFeature(cameraProperties, initialSetting, cameraName);
+          @NonNull CameraProperties cameraProperties,
+          ResolutionPreset initialSetting,
+          String cameraName, Activity activity) {
+    return new ResolutionFeature(cameraProperties, initialSetting, cameraName, activity);
   }
 
   @Override
